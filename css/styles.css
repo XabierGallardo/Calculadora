@@ -1,0 +1,55 @@
+/*	Generales	*/
+body {
+	background: #0d1117;
+}
+
+.cuerpo {
+	width: 27%;
+	margin: 0 auto;
+	color: #c9d1d9;
+	border: 2px solid #30363d;
+	border-radius: 5px;
+	font-size: xxx-large;
+}
+
+#calculadora {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+
+/*	Pantalla	*/
+
+#pantalla {
+	height: 10vh;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: end;
+	flex-wrap: wrap;
+}
+
+
+
+/*	Teclado	*/
+
+#teclado {
+	height: 70vh;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+	justify-items: center;
+	align-items: center;
+} 
+
+/* Colores filas*/
+.fila-5 { color: #24ad60; border: 1px solid white; }
+.fila-4 { color: #3f5da2; border: 1px solid white; }
+.fila-3 { color: #874b9d; border: 1px solid white; }
+.fila-2 { color: #af3280; border: 1px solid white; }
+.fila-1 { color: #d91d40; border: 1px solid white; }
+
+#tecla-1 { grid-column-start: 1; grid-column-end: 1; }
+#tecla-0 { grid-column-start: 1; grid-column-end: 3; }
