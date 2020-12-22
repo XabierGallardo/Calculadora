@@ -2,39 +2,43 @@
 <html>
 <head>
 	<title>Calculadora</title>
+	<meta charset="utf-8">
+
+	<!-- CSS & jQuery -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
 	<div id="calculadora">
 
-		<div class="cuerpo" id="pantalla">
-			<div id="pantalla-resultado">123456789</div>
+		<div class="cuerpo" id="pantalla-cuerpo">
+			<div id="pantalla-resultados"></div>
 		</div>
 
 		<div class="cuerpo" id="teclado">
 
-			<div id="tecla-bloq" class="fila-5">b</div>
-			<div id="tecla-/" class="fila-5">/</div>
-			<div id="tecla-*" class="fila-5">*</div>
-			<div id="tecla--" class="fila-5">-</div>
+			<div id="tecla-bloq" class="fila-5 teclas">C</div>
+			<div id="tecla-/" class="fila-5 teclas">/</div>
+			<div id="tecla-*" class="fila-5 teclas">*</div>
+			<div id="tecla--" class="fila-5 teclas">-</div>
 
-			<div id="tecla-7" class="fila-4">7</div>
-			<div id="tecla-8" class="fila-4">8</div>
-			<div id="tecla-9" class="fila-4">9</div>
-			<div id="tecla-+" class="fila-4">+</div>
+			<div id="tecla-7" class="fila-4 teclas">7</div>
+			<div id="tecla-8" class="fila-4 teclas">8</div>
+			<div id="tecla-9" class="fila-4 teclas">9</div>
+			<div id="tecla-+" class="fila-4 teclas">+</div>
 
-			<div id="tecla-4" class="fila-3">4</div>
-			<div id="tecla-5" class="fila-3">5</div>
-			<div id="tecla-6" class="fila-3">6</div>
+			<div id="tecla-4" class="fila-3 teclas">4</div>
+			<div id="tecla-5" class="fila-3 teclas">5</div>
+			<div id="tecla-6" class="fila-3 teclas">6</div>
 
-			<div id="tecla-1" class="fila-2">1</div>
-			<div id="tecla-2" class="fila-2">2</div>
-			<div id="tecla-3" class="fila-2">3</div>
-			<div id="tecla-intro" class="fila-2">i</div>
+			<div id="tecla-1" class="fila-2 teclas">1</div>
+			<div id="tecla-2" class="fila-2 teclas">2</div>
+			<div id="tecla-3" class="fila-2 teclas">3</div>
+			<div id="tecla-intro" class="fila-2 teclas">=</div>
 
-			<div id="tecla-0" class="fila-1">0</div>
-			<div id="tecla-." class="fila-1">.</div>
+			<div id="tecla-0" class="fila-1 teclas">0</div>
+			<div id="tecla-." class="fila-1 teclas">.</div>
 			
 		</div>	
 

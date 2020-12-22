@@ -4,7 +4,7 @@ body {
 }
 
 .cuerpo {
-	width: 27%;
+	width: 20%;
 	margin: 0 auto;
 	color: #c9d1d9;
 	border: 2px solid #30363d;
@@ -13,7 +13,7 @@ body {
 }
 
 #calculadora {
-	height: 90vh;
+	height: 75vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -23,7 +23,7 @@ body {
 
 /*	Pantalla	*/
 
-#pantalla {
+#pantalla-cuerpo {
 	height: 10vh;
 	display: flex;
 	flex-direction: row-reverse;
@@ -36,20 +36,49 @@ body {
 /*	Teclado	*/
 
 #teclado {
-	height: 70vh;
+	height: 60vh;
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: 20% 20% 20% 20% 20%;
 	justify-items: center;
 	align-items: center;
-} 
+}
 
-/* Colores filas*/
-.fila-5 { color: #24ad60; border: 1px solid white; }
-.fila-4 { color: #3f5da2; border: 1px solid white; }
-.fila-3 { color: #874b9d; border: 1px solid white; }
-.fila-2 { color: #af3280; border: 1px solid white; }
-.fila-1 { color: #d91d40; border: 1px solid white; }
+.teclas { 
+	cursor: pointer;
+	padding: 20% 30% 20% 30%;
+}
 
+
+#tecla-\+ { grid-area: 2 / 4 / 4 / 4 }
 #tecla-1 { grid-column-start: 1; grid-column-end: 1; }
 #tecla-0 { grid-column-start: 1; grid-column-end: 3; }
+#tecla-intro { grid-area: 4 / 4 / 6 / 4}
+
+
+
+/*	Colores filas 	*/
+.fila-5 { color: #24ad60; }
+.fila-4 { color: #3f5da2; }
+.fila-3 { color: #874b9d; }
+.fila-2 { color: #af3280; }
+.fila-1 { color: #d91d40; }
+
+
+
+/*	Media Queries	*/
+@media (max-width: 1300px) {
+	.cuerpo { font-size: xx-large; }
+}
+
+@media (max-width: 850px) {
+	.cuerpo { font-size: x-large; }
+}
+
+@media (max-width: 650px) {
+	.cuerpo { font-size: large; }
+}
+
+@media (max-width: 450px) {
+	.cuerpo { font-size: small; }
+}
