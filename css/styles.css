@@ -1,10 +1,11 @@
 /*	Generales	*/
+
 body {
 	background: #0d1117;
 }
 
 .cuerpo {
-	width: 20%;
+	width: 23%;
 	margin: 0 auto;
 	color: #c9d1d9;
 	border: 2px solid #30363d;
@@ -13,10 +14,10 @@ body {
 }
 
 #calculadora {
-	height: 75vh;
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 
@@ -24,11 +25,22 @@ body {
 /*	Pantalla	*/
 
 #pantalla-cuerpo {
-	height: 10vh;
+	width: 23%;
+	height: 8vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#pantalla-previa {
+	border: 1px solid red;
+	font-size: medium;
+}
+
+#pantalla-resultados {
+	border: 1px solid green;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: end;
-	flex-wrap: wrap;
+	align-items: flex-end;
 }
 
 
@@ -58,6 +70,7 @@ body {
 
 
 /*	Colores filas 	*/
+
 .fila-5 { color: #24ad60; }
 .fila-4 { color: #3f5da2; }
 .fila-3 { color: #874b9d; }
@@ -67,6 +80,7 @@ body {
 
 
 /*	Media Queries	*/
+
 @media (max-width: 1300px) {
 	.cuerpo { font-size: xx-large; }
 }
