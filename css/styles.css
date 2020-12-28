@@ -31,13 +31,9 @@ body {
 	flex-direction: column;
 }
 
-#pantalla-previa {
-	border: 1px solid red;
-	font-size: medium;
-}
+#pantalla-previa { font-size: medium; }
 
 #pantalla-resultados {
-	border: 1px solid green;
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: flex-end;
@@ -62,7 +58,7 @@ body {
 }
 
 
-#tecla-\+ { grid-area: 2 / 4 / 4 / 4 }
+#tecla-sumar { grid-area: 2 / 4 / 4 / 4 }
 #tecla-1 { grid-column-start: 1; grid-column-end: 1; }
 #tecla-0 { grid-column-start: 1; grid-column-end: 3; }
 #tecla-intro { grid-area: 4 / 4 / 6 / 4}
@@ -91,6 +87,7 @@ body {
 
 @media (max-width: 650px) {
 	.cuerpo { font-size: large; }
+	#pantalla-previa { font-size: smaller; }
 }
 
 @media (max-width: 450px) {
