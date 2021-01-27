@@ -76,6 +76,14 @@ $("#tecla-dividir").click(function() {
 	dividir();
 });
 
+$("#tecla-intro").click(function() {
+	resultadoFinal();
+});
+
+$("#tecla-bloq").click(function(){
+	reset();
+});
+
 
 
 //Registro números con teclado con disposición ES
@@ -86,7 +94,7 @@ $(document).keydown(function() {
 	//Registro números por consola para mapear teclas
 	//console.log("tecla " + tecla + " valor " + tecla_valor);
 
-	/* Códigos en numeral y no numeral
+	/* Códigos en teclado numeral y no numeral
 	/	111
 	*	106	
 	+	107	171
@@ -104,44 +112,38 @@ $(document).keydown(function() {
 	.	110	190
 	Intro 13*/
 
+	//Switch códigos
 	switch(tecla) {
 
 		case 107: //Tecla +
 			sumar();
 		break;
+		case 171:
+			sumar();
+		break;
+
 
 		case 109: //Tecla -
 			restar();
 		break;
-
-		case 106: //Tecla *
-			multiplicar();
+		case 173:
+			restar();
 		break;
 
-		case 111: //Tecla /
-			dividir();
-		break;
 
 		case 13: //Tecla Intro
-			resultado();
+			resultadoFinal();
 		break;
-
-
 
 
 		case 190: //Tecla .
 			num_pantalla += ".";
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 54: //Tecla .
+		case 54:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 96: //Tecla 0
@@ -150,61 +152,42 @@ $(document).keydown(function() {
 			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 48: //Tecla 0
+		case 48:
 			num_pantalla += tecla_valor;
 
 			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 97: //Tecla 1
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 49: //Tecla 1
+		case 49:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 98: //Tecla 2
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 50: //Tecla 2
+		case 50:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 99: //Tecla 3
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
-		case 51: //Tecla 3
+		case 51:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 100: //Tecla 4
@@ -214,71 +197,48 @@ $(document).keydown(function() {
 
 		case 52: //Tecla 4
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 101: //Tecla 5
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 53: //Tecla 5
+		case 53:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 102: //Tecla 6
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 54: //Tecla 6
+		case 54:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 103: //Tecla 7
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 55: //Tecla 7
+		case 55:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 104: //Tecla 8
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 56: //Tecla 8
+		case 56:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
 
 
 
@@ -286,55 +246,38 @@ $(document).keydown(function() {
 			num_pantalla += tecla_valor;
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-		case 57: //Tecla 9
+		case 57:
 			num_pantalla += tecla_valor;
-
-			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-resultados").html(num_pantalla.substring(1));
 		break;
-
-
 
 
 		case 144: //Tecla bloq
 			reset();
 		break;
-
 		case 67: //Tecla C
 			reset();
 		break;
 
 
-
-
 		default:
-		//console.log("Tecla incorrecta");
+			//console.log("Tecla incorrecta");
 	}
 
-
-
-
+	//Switch de valores
 	switch(tecla_valor) {
-
-		case "+":
-			sumar();
-		break;
-
-		case "-":
-			restar();
-		break;
 
 		case "*":
 			multiplicar();
-		break;		
+		break;
 
-		case "/":
+
+		case"/":
 			dividir();
 		break;
-		
+
 		default:
-		//console.log("Tecla incorrecta");
+			//console.log("Tecla incorrecta");
 	}
 });
 
@@ -347,12 +290,14 @@ function reset() {
 	fila_2 = 0;
 
 	$("#pantalla-resultados").html(num_pantalla);
-	$("#pantalla-previa").html(num_pantalla);
+	$("#pantalla-historico").html(num_pantalla);
 }
 
 
 
 function sumar() {
+
+	resultadoSumar(); //Resolver antes de continuar
 	
 	//Convertimos en float el número de pantalla
 	let valor_pantalla = $("#pantalla-resultados").text();
@@ -368,7 +313,7 @@ function sumar() {
 		let resultado = fila_1 + fila_2;
 
 		//Imprimimos los valores
-		$("#pantalla-previa").html(resultado);
+		$("#pantalla-historico").html(resultado);
 		$("#pantalla-resultados").html(resultado);
 
 		//Pasamos el nuevo valor a la fila_1 y reseteamos los valores
@@ -376,22 +321,20 @@ function sumar() {
 		fila_2 = 0;
 		num_pantalla = 0;
 
-
 	} else {
 
 		//Metemos el nuevo valor en fila_1 e imprimimos
 		fila_1 = num_previo;
-		$("#pantalla-previa").html(num_previo);
-
+		$("#pantalla-historico").html(num_previo);
 		num_pantalla = 0;
-		$("#pantalla-resultados").html(num_pantalla);
-
 	}
 }
 
 
 
 function restar() {
+
+	resultadoRestar();
 	
 	let valor_pantalla = $("#pantalla-resultados").text();
 	let num_previo = parseFloat(valor_pantalla);
@@ -402,28 +345,26 @@ function restar() {
 
 		let resultado = fila_1 - fila_2;
 
-		$("#pantalla-previa").html(resultado);
+		$("#pantalla-historico").html(resultado);
 		$("#pantalla-resultados").html(resultado);
 
 		fila_1 = resultado;
 		fila_2 = 0;
 		num_pantalla = 0;
 
-
 	} else {
 
 		fila_1 = num_previo;
-		$("#pantalla-previa").html(num_previo);
-
+		$("#pantalla-historico").html(num_previo);
 		num_pantalla = 0;
-		$("#pantalla-resultados").html(num_pantalla);
-
 	}
 }
 
 
 
 function multiplicar() {
+
+	resultadoMultiplicar();
 	
 	let valor_pantalla = $("#pantalla-resultados").text();
 	let num_previo = parseFloat(valor_pantalla);
@@ -434,28 +375,26 @@ function multiplicar() {
 
 		let resultado = fila_1 * fila_2;
 
-		$("#pantalla-previa").html(resultado);
+		$("#pantalla-historico").html(resultado);
 		$("#pantalla-resultados").html(resultado);
 
 		fila_1 = resultado;
 		fila_2 = 0;
 		num_pantalla = 0;
 
-
 	} else {
 
 		fila_1 = num_previo;
-		$("#pantalla-previa").html(num_previo);
-
+		$("#pantalla-historico").html(num_previo);
 		num_pantalla = 0;
-		$("#pantalla-resultados").html(num_pantalla);
-
 	}
 }
 
 
 
 function dividir() {
+
+	resultadoDividir();
 	
 	let valor_pantalla = $("#pantalla-resultados").text();
 	let num_previo = parseFloat(valor_pantalla);
@@ -466,37 +405,39 @@ function dividir() {
 
 		let resultado = fila_1 / fila_2;
 
-		$("#pantalla-previa").html(resultado);
+		$("#pantalla-historico").html(resultado);
 		$("#pantalla-resultados").html(resultado);
 
 		fila_1 = resultado;
 		fila_2 = 0;
 		num_pantalla = 0;
 
-
 	} else {
 
 		fila_1 = num_previo;
-		$("#pantalla-previa").html(num_previo);
-
+		$("#pantalla-historico").html(num_previo);
 		num_pantalla = 0;
-		$("#pantalla-resultados").html(num_pantalla);
-
 	}
 }
 
 
+//Resoluciones previas
 
-function resultado() {
-	console.log("Imprimir resultado");
+function resultadoSumar() {
+
 }
 
+function resultadoRestar() {
 
+}
 
-//Resetear la calculadora
-$("#tecla-bloq").click(function(){
-	reset();
-});
+function resultadoMultiplicar() {
+
+}
+
+function resultadoDividir() {
+
+}
 
 
 

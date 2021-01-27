@@ -5,16 +5,16 @@ body {
 }
 
 .cuerpo {
-	width: 23%;
+	width: 20%;
 	margin: 0 auto;
-	color: #c9d1d9;
 	border: 2px solid #30363d;
+	color: #0d1117;
 	border-radius: 5px;
 	font-size: xxx-large;
 }
 
 #calculadora {
-	height: 90vh;
+	height: 75vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -25,18 +25,21 @@ body {
 /*	Pantalla	*/
 
 #pantalla-cuerpo {
-	width: 23%;
+	width: 20%;
 	height: 8vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	color: #c9d1d9;
 }
 
-#pantalla-previa { font-size: medium; }
+#pantalla-historico { font-size: medium; }
 
 #pantalla-resultados {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: flex-end;
+	font-size: xx-large;
 }
 
 
@@ -44,7 +47,7 @@ body {
 /*	Teclado	*/
 
 #teclado {
-	height: 60vh;
+	height: 55vh;
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: 20% 20% 20% 20% 20%;
@@ -87,7 +90,7 @@ body {
 
 @media (max-width: 650px) {
 	.cuerpo { font-size: large; }
-	#pantalla-previa { font-size: smaller; }
+	#pantalla-historico { font-size: smaller; }
 }
 
 @media (max-width: 450px) {
