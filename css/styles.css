@@ -35,7 +35,7 @@ body {
 
 #pantalla-historico { font-size: medium; }
 
-#pantalla-resultados {
+#pantalla-valor {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: flex-end;
