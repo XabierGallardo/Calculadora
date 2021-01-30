@@ -5,7 +5,7 @@ body {
 }
 
 .cuerpo {
-	width: 20%;
+	width: 21%;
 	margin: 0 auto;
 	border: 2px solid #30363d;
 	color: #0d1117;
@@ -14,7 +14,7 @@ body {
 }
 
 #calculadora {
-	height: 75vh;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -25,21 +25,25 @@ body {
 /*	Pantalla	*/
 
 #pantalla-cuerpo {
-	width: 20%;
-	height: 8vh;
+	width: 21%;
+	height: 10.3vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	color: #c9d1d9;
 }
 
-#pantalla-historico { font-size: medium; }
+#pantalla-historico { 
+	font-size: xx-large;
+	padding-left: 1%;
+}
 
 #pantalla-valor {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: flex-end;
-	font-size: xx-large;
+	font-size: xxx-large;
+	padding-right: 1%;
 }
 
 

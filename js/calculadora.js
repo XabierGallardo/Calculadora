@@ -95,6 +95,8 @@ $("#tecla-bloq").click(function(){
 });
 
 
+
+
 //Registro números con teclado con disposición ES
 $(document).keydown(function() {
 	const tecla = event.keyCode;
@@ -135,21 +137,19 @@ $(document).keydown(function() {
 			pantalla_valor += ".";
 			$("#pantalla-valor").html(pantalla_valor.substring(1));
 		break;
-		case 54:
-			pantalla_valor += tecla_valor;
+		case 110:
+			pantalla_valor += ".";
 			$("#pantalla-valor").html(pantalla_valor.substring(1));
 		break;
 
 
 		case 96: //Tecla 0
 			pantalla_valor += tecla_valor;
-
 			//Imprimimos el valor de la secuencia sin el 0 inicial
 			$("#pantalla-valor").html(pantalla_valor.substring(1));
 		break;
 		case 48:
 			pantalla_valor += tecla_valor;
-
 			$("#pantalla-valor").html(pantalla_valor.substring(1));
 		break;
 
@@ -271,6 +271,7 @@ $(document).keydown(function() {
 			operacion();
 		break;
 
+
 		default:
 			//console.log("Tecla incorrecta");
 	}
@@ -279,7 +280,7 @@ $(document).keydown(function() {
 
 
 
-/*	Funcionalidades */
+/*	FUNCIONALIDADES */
 
 function reset() {
 	pantalla_valor = 0;
@@ -295,19 +296,15 @@ function reset() {
 
 
 
-function operacion() {
 
-	//Las operaciones se resuelven con el operador = o mediante los operadores + - * /
-	resultado(); 
+function operacion() {
 
 	//Convertir en float el num de pantalla
 	let pantalla_string = $("#pantalla-valor").text();
 	let pantalla_numero = parseFloat(pantalla_string);
 
-
-	//Si ya existía un valor previo, el nuevo se asigna a fila_2
 	if (fila_1 !== 0) {
-		
+
 		fila_2 = pantalla_numero;
 
 		switch (operador) {
@@ -330,19 +327,17 @@ function operacion() {
 
 			default:
 				console.log("Falta asignar operador");
-
 		}
-
+	
 		operador = "";
 
-		//El resultado pasa a fila_1 y se imprimen los valores
 		fila_1 = resultado_calculo;
-		$("#pantalla-historico").html(fila_1);
-
+		$("#pantalla-historico").html(resultado_calculo);
+		
 		fila_2 = 0;
 		pantalla_valor = 0;
 		$("#pantalla-valor").html(pantalla_valor);
-		
+
 	} else { //Si no existía un valor previo
 
 		fila_1 = pantalla_numero;
@@ -350,41 +345,55 @@ function operacion() {
 
 		pantalla_valor = 0;
 		$("#pantalla-valor").html(pantalla_valor);
-
-		operador = "";
 	}
-
-	/* Guía para resultado() {}
-
-	1. Introducir cifra
-	2. Al presionar un operador, el número de pantalla_resultados pasa a pantalla_historico 
-
-
-	4. Al presionar intro o cualquier simbolo, se hace la funcion resolver
-	5. La funcion resolver agarra el string de pantalla_historico , el numero lo mete en fila_1
-	5. Luego toma el valor en pantalla y lo mete en fila_2
-
-	7. Despues de enter el numero, agarra el ultimo caracter (cifra operacion) i se mete condicional
-
-			if("+") -> fila_1 + fila_2
-			...
-
-	8. Considerar los if de antes, si no hay numero en fila_1, se mete ahí
-
-	9. Completada la operación, el resultado pasa a pantalla_historico y se quedará esperando a que se meta algun operador
-
-	10. Resetear operador y valores
-
-	11. Condicional sobre operadores sin valores previos
-	*/ 
-	
 }
+
+
+
 
 function resultado() {
 
-		//Calcular resultado de fila_1 y fila_2
+	let pantalla_string = $("#pantalla-valor").text();
+	let pantalla_numero = parseFloat(pantalla_string);
 
+	if (fila_1 !== 0) {
+
+		fila_2 = pantalla_numero;
+
+		switch (operador) {
+			
+			case "+":
+				resultado_calculo = fila_1 + fila_2;
+			break;
+
+			case "-":
+				resultado_calculo = fila_1 - fila_2;
+			break;
+
+			case "*":
+				resultado_calculo = fila_1 * fila_2;
+			break;
+
+			case "/":
+				resultado_calculo = fila_1 / fila_2;
+			break;
+
+			default:
+				console.log("Falta asignar operador");
+		}
+
+		operador = "";
+
+		fila_1 = 0;
+		$("#pantalla-historico").html(resultado_calculo);
+
+		fila_2 = 0;
+		pantalla_valor = 0;
+		$("#pantalla-valor").html(pantalla_valor);
+	}
 }
+
+
 
 
 reset(); //Reset inicial
