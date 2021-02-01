@@ -26,7 +26,7 @@ body {
 
 #pantalla-cuerpo {
 	width: 21%;
-	height: 10.3vh;
+	height: 10vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -86,10 +86,14 @@ body {
 
 @media (max-width: 1300px) {
 	.cuerpo { font-size: xx-large; }
+	#pantalla-historico { font-size: large; }
+	#pantalla-valor { font-size: xx-large; }
 }
 
 @media (max-width: 850px) {
 	.cuerpo { font-size: x-large; }
+	#pantalla-historico { font-size: large; }
+	#pantalla-valor { font-size: xx-large; }
 }
 
 @media (max-width: 650px) {
@@ -97,6 +101,7 @@ body {
 	#pantalla-historico { font-size: smaller; }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 	.cuerpo { font-size: small; }
+	#pantalla-valor { font-size: small; }
 }

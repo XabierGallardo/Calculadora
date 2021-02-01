@@ -94,6 +94,11 @@ $("#tecla-bloq").click(function(){
 	reset();
 });
 
+$("#teclado").click(function() {
+	console.log("test");
+});
+
+
 
 
 
