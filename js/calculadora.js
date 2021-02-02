@@ -13,57 +13,90 @@ let resultado_calculo = 0;
 
 //Registro números con mouse
 $("#tecla-9").click(function() {
-	pantalla_valor += "9";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "9";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-8").click(function() {
-	pantalla_valor += "8";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "8";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-7").click(function() {
-	pantalla_valor += "7";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "7";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-6").click(function() {
-	pantalla_valor += "6";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "6";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-5").click(function() {
-	pantalla_valor += "5";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "5";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-4").click(function() {
-	pantalla_valor += "4";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "4";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 $("#tecla-3").click(function() {
-	pantalla_valor += "3";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "3";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-2").click(function() {
-	pantalla_valor += "2";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "2";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-1").click(function() {
-	pantalla_valor += "1";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "1";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-0").click(function() {
-	pantalla_valor += "0";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "0";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-punto").click(function() {
-	pantalla_valor += ".";
-	$("#pantalla-valor").html(pantalla_valor.substring(1));
+	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	} else {
+		pantalla_valor += "9";
+		$("#pantalla-valor").html(pantalla_valor.substring(1));
+	}
 });
 
 $("#tecla-sumar").click(function() {
@@ -93,11 +126,6 @@ $("#tecla-intro").click(function() {
 $("#tecla-bloq").click(function(){
 	reset();
 });
-
-$("#teclado").click(function() {
-	console.log("test");
-});
-
 
 
 
@@ -139,114 +167,188 @@ $(document).keydown(function() {
 
 
 		case 190: //Tecla .
-			pantalla_valor += ".";
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += ".";
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 		case 110:
-			pantalla_valor += ".";
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += ".";
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 96: //Tecla 0
-			pantalla_valor += tecla_valor;
-			//Imprimimos el valor de la secuencia sin el 0 inicial
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				//Imprimimos el valor de la secuencia sin el 0 inicial
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 48:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 97: //Tecla 1
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 		case 49:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 98: //Tecla 2
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 50:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 99: //Tecla 3
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 51:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 100: //Tecla 4
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 		case 52: //Tecla 4
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 101: //Tecla 5
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 53:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 102: //Tecla 6
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 54:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 103: //Tecla 7
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 55:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 104: //Tecla 8
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 56:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
 		case 105: //Tecla 9
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
+
 		case 57:
-			pantalla_valor += tecla_valor;
-			$("#pantalla-valor").html(pantalla_valor.substring(1));
+			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+			} else {
+				pantalla_valor += tecla_valor;
+				$("#pantalla-valor").html(pantalla_valor.substring(1));
+			}
 		break;
 
 
@@ -299,6 +401,21 @@ function reset() {
 	$("#pantalla-historico").html(pantalla_valor);
 }
 
+
+/*
+function redimensionar() {
+
+	let valor = pantalla_valor.length;
+
+	if( valor > 13 ) {
+		$("#pantalla-valor").css("font-size","x-large");
+		$("#pantalla-historico").css("font-size","large");
+
+	}
+
+	console.log("Valor: " + valor);
+}
+*/
 
 
 

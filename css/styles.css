@@ -1,5 +1,4 @@
 /*	Generales	*/
-
 body {
 	background: #0d1117;
 }
@@ -23,7 +22,6 @@ body {
 
 
 /*	Pantalla	*/
-
 #pantalla-cuerpo {
 	width: 21%;
 	height: 10vh;
@@ -49,7 +47,6 @@ body {
 
 
 /*	Teclado	*/
-
 #teclado {
 	height: 55vh;
 	display: grid;
@@ -64,7 +61,6 @@ body {
 	padding: 20% 30% 20% 30%;
 }
 
-
 #tecla-sumar { grid-area: 2 / 4 / 4 / 4 }
 #tecla-1 { grid-column-start: 1; grid-column-end: 1; }
 #tecla-0 { grid-column-start: 1; grid-column-end: 3; }
@@ -73,7 +69,6 @@ body {
 
 
 /*	Colores filas 	*/
-
 .fila-5 { color: #24ad60; }
 .fila-4 { color: #3f5da2; }
 .fila-3 { color: #874b9d; }
@@ -83,7 +78,6 @@ body {
 
 
 /*	Media Queries	*/
-
 @media (max-width: 1300px) {
 	.cuerpo { font-size: xx-large; }
 	#pantalla-historico { font-size: large; }
