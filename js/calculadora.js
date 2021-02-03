@@ -10,10 +10,8 @@ let resultado_calculo = 0;
 
 
 /*	REGISTROS	*/
-
-//Registro números con mouse
 $("#tecla-9").click(function() {
-	if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
+	if(pantalla_valor.length > 13) {console.log("Limite máximo de números") 
 	} else {
 		pantalla_valor += "9";
 		$("#pantalla-valor").html(pantalla_valor.substring(1));
@@ -145,6 +143,7 @@ $(document).keydown(function() {
 			operador = "+";
 			operacion();
 		break;
+
 		case 171:
 			operador = "+";
 			operacion();
@@ -155,6 +154,7 @@ $(document).keydown(function() {
 			operador = "-";
 			operacion();
 		break;
+
 		case 173:
 			operador = "-";
 			operacion();
@@ -173,6 +173,7 @@ $(document).keydown(function() {
 				$("#pantalla-valor").html(pantalla_valor.substring(1));
 			}
 		break;
+
 		case 110:
 			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
 			} else {
@@ -180,6 +181,7 @@ $(document).keydown(function() {
 				$("#pantalla-valor").html(pantalla_valor.substring(1));
 			}
 		break;
+
 
 
 		case 96: //Tecla 0
@@ -200,6 +202,7 @@ $(document).keydown(function() {
 		break;
 
 
+
 		case 97: //Tecla 1
 			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
 			} else {
@@ -214,6 +217,7 @@ $(document).keydown(function() {
 				$("#pantalla-valor").html(pantalla_valor.substring(1));
 			}
 		break;
+
 
 
 		case 98: //Tecla 2
@@ -233,6 +237,7 @@ $(document).keydown(function() {
 		break;
 
 
+
 		case 99: //Tecla 3
 			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
 			} else {
@@ -248,6 +253,7 @@ $(document).keydown(function() {
 				$("#pantalla-valor").html(pantalla_valor.substring(1));
 			}
 		break;
+
 
 
 		case 100: //Tecla 4
@@ -267,6 +273,7 @@ $(document).keydown(function() {
 		break;
 
 
+
 		case 101: //Tecla 5
 			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
 			} else {
@@ -282,6 +289,7 @@ $(document).keydown(function() {
 				$("#pantalla-valor").html(pantalla_valor.substring(1));
 			}
 		break;
+
 
 
 		case 102: //Tecla 6
@@ -301,6 +309,7 @@ $(document).keydown(function() {
 		break;
 
 
+
 		case 103: //Tecla 7
 			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
 			} else {
@@ -316,6 +325,7 @@ $(document).keydown(function() {
 				$("#pantalla-valor").html(pantalla_valor.substring(1));
 			}
 		break;
+
 
 
 		case 104: //Tecla 8
@@ -335,6 +345,7 @@ $(document).keydown(function() {
 		break;
 
 
+
 		case 105: //Tecla 9
 			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
 			} else {
@@ -352,12 +363,14 @@ $(document).keydown(function() {
 		break;
 
 
+
 		case 144: //Tecla bloq
 			reset();
 		break;
 		case 67: //Tecla C
 			reset();
 		break;
+
 
 
 		default:
@@ -378,7 +391,6 @@ $(document).keydown(function() {
 			operacion();
 		break;
 
-
 		default:
 			//console.log("Tecla incorrecta");
 	}
@@ -388,7 +400,6 @@ $(document).keydown(function() {
 
 
 /*	FUNCIONALIDADES */
-
 function reset() {
 	pantalla_valor = 0;
 	fila_1 = 0;
@@ -401,21 +412,6 @@ function reset() {
 	$("#pantalla-historico").html(pantalla_valor);
 }
 
-
-/*
-function redimensionar() {
-
-	let valor = pantalla_valor.length;
-
-	if( valor > 13 ) {
-		$("#pantalla-valor").css("font-size","x-large");
-		$("#pantalla-historico").css("font-size","large");
-
-	}
-
-	console.log("Valor: " + valor);
-}
-*/
 
 
 
