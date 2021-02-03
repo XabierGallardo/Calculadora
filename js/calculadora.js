@@ -8,7 +8,6 @@ let resultado_calculo = 0;
 
 
 
-
 /*	REGISTROS	*/
 $("#tecla-9").click(function() {
 	if(pantalla_valor.length > 13) {console.log("Limite máximo de números") 
@@ -124,7 +123,6 @@ $("#tecla-intro").click(function() {
 $("#tecla-bloq").click(function(){
 	reset();
 });
-
 
 
 
@@ -398,7 +396,6 @@ $(document).keydown(function() {
 
 
 
-
 /*	FUNCIONALIDADES */
 function reset() {
 	pantalla_valor = 0;
@@ -411,7 +408,6 @@ function reset() {
 	$("#pantalla-valor").html(pantalla_valor);
 	$("#pantalla-historico").html(pantalla_valor);
 }
-
 
 
 
@@ -468,7 +464,6 @@ function operacion() {
 
 
 
-
 function resultado() {
 
 	let pantalla_string = $("#pantalla-valor").text();
@@ -510,8 +505,6 @@ function resultado() {
 		$("#pantalla-valor").html(pantalla_valor);
 	}
 }
-
-
 
 
 reset(); //Reset inicial
