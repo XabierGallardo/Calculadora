@@ -1,4 +1,5 @@
-//Variables iniciales, pantalla_valor irá agregando números y se guardarán en el array fila_1 
+//Variables iniciales, "pantalla_valor" irá agregando números y se guardarán en "fila_1"
+
 let pantalla_valor = 0;
 let fila_1 = 0;
 let fila_2 = 0;
@@ -8,7 +9,9 @@ let resultado_calculo = 0;
 
 
 
-/*	REGISTROS	*/
+
+/*	MAPEO DEL MOUSE	*/
+
 $("#tecla-9").click(function() {
 	if(pantalla_valor.length > 13) {console.log("Limite máximo de números") 
 	} else {
@@ -126,7 +129,10 @@ $("#tecla-bloq").click(function(){
 
 
 
-//Registro números con teclado con disposición ES
+
+/*	MAPEO DEL TECLADO	*/
+//Mapeo de números con teclado con disposición ES
+
 $(document).keydown(function() {
 	const tecla = event.keyCode;
 	const tecla_valor = event.key;
@@ -208,6 +214,7 @@ $(document).keydown(function() {
 				$("#pantalla-valor").html(pantalla_valor.substring(1));
 			}
 		break;
+
 		case 49:
 			if(pantalla_valor.length > 13) { console.log("Limite máximo de números") 
 			} else {
@@ -365,6 +372,7 @@ $(document).keydown(function() {
 		case 144: //Tecla bloq
 			reset();
 		break;
+
 		case 67: //Tecla C
 			reset();
 		break;
@@ -396,7 +404,9 @@ $(document).keydown(function() {
 
 
 
+
 /*	FUNCIONALIDADES */
+
 function reset() {
 	pantalla_valor = 0;
 	fila_1 = 0;
@@ -442,15 +452,19 @@ function operacion() {
 			default:
 				console.log("Falta asignar operador");
 		}
+
 	
 		operador = "";
+
 
 		fila_1 = resultado_calculo;
 		$("#pantalla-historico").html(resultado_calculo);
 		
+
 		fila_2 = 0;
 		pantalla_valor = 0;
 		$("#pantalla-valor").html(pantalla_valor);
+
 
 	} else { //Si no existía un valor previo
 
@@ -495,10 +509,13 @@ function resultado() {
 				console.log("Falta asignar operador");
 		}
 
+
 		operador = "";
+
 
 		fila_1 = 0;
 		$("#pantalla-historico").html(resultado_calculo);
+
 
 		fila_2 = 0;
 		pantalla_valor = 0;

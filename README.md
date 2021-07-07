@@ -1,5 +1,4 @@
 # Calculadora
-
 Calculadora web creada en JavaScript y jQuery
 
 Diseñada con la forma del teclado numeral  :computer:

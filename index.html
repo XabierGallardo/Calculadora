@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Calculadora</title>
-	<meta charset="utf-8">
-	<!-- CSS & jQuery -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
 
-	<div id="calculadora">
+	<head>
 
-		<div class="cuerpo" id="pantalla-cuerpo">
+		<title>Calculadora</title>
+		<meta charset="utf-8">
 
-			<div id="pantalla-historico">0</div>
-			<div id="pantalla-valor"></div>
-			
+		<!-- CSS & jQuery -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="calculadora">
+
+			<div class="cuerpo" id="pantalla-cuerpo">
+
+				<div id="pantalla-historico">0</div>
+				<div id="pantalla-valor"></div>
+				
+			</div>
+
+
+			<div class="cuerpo" id="teclado">
+
+				<!-- Fila 5 -->
+				<div id="tecla-bloq" class="fila-5 teclas">C</div>
+				<div id="tecla-dividir" class="fila-5 teclas">/</div>
+				<div id="tecla-multiplicar" class="fila-5 teclas">*</div>
+				<div id="tecla-restar" class="fila-5 teclas">-</div>
+
+				<!-- Fila 4 -->
+				<div id="tecla-7" class="fila-4 teclas">7</div>
+				<div id="tecla-8" class="fila-4 teclas">8</div>
+				<div id="tecla-9" class="fila-4 teclas">9</div>
+				<div id="tecla-sumar" class="fila-4 teclas">+</div>
+
+				<!-- Fila 3 -->
+				<div id="tecla-4" class="fila-3 teclas">4</div>
+				<div id="tecla-5" class="fila-3 teclas">5</div>
+				<div id="tecla-6" class="fila-3 teclas">6</div>
+
+				<!-- Fila 2 -->
+				<div id="tecla-1" class="fila-2 teclas">1</div>
+				<div id="tecla-2" class="fila-2 teclas">2</div>
+				<div id="tecla-3" class="fila-2 teclas">3</div>
+				<div id="tecla-intro" class="fila-2 teclas">=</div>
+
+				<!-- Fila 1 -->
+				<div id="tecla-0" class="fila-1 teclas">0</div>
+				<div id="tecla-punto" class="fila-1 teclas">.</div>
+			</div>	
 		</div>
 
-		<div class="cuerpo" id="teclado">
+		<!-- JavaScript-->
+		<script src="js/calculadora.js"></script>
 
-			<div id="tecla-bloq" class="fila-5 teclas">C</div>
-			<div id="tecla-dividir" class="fila-5 teclas">/</div>
-			<div id="tecla-multiplicar" class="fila-5 teclas">*</div>
-			<div id="tecla-restar" class="fila-5 teclas">-</div>
-
-			<div id="tecla-7" class="fila-4 teclas">7</div>
-			<div id="tecla-8" class="fila-4 teclas">8</div>
-			<div id="tecla-9" class="fila-4 teclas">9</div>
-			<div id="tecla-sumar" class="fila-4 teclas">+</div>
-
-			<div id="tecla-4" class="fila-3 teclas">4</div>
-			<div id="tecla-5" class="fila-3 teclas">5</div>
-			<div id="tecla-6" class="fila-3 teclas">6</div>
-
-			<div id="tecla-1" class="fila-2 teclas">1</div>
-			<div id="tecla-2" class="fila-2 teclas">2</div>
-			<div id="tecla-3" class="fila-2 teclas">3</div>
-			<div id="tecla-intro" class="fila-2 teclas">=</div>
-
-			<div id="tecla-0" class="fila-1 teclas">0</div>
-			<div id="tecla-punto" class="fila-1 teclas">.</div>
-		</div>	
-	</div>
-
-	<script src="js/calculadora.js"></script>
-</body>
+	</body>
 </html>

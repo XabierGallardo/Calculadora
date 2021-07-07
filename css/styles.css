@@ -1,4 +1,5 @@
 /*	Generales	*/
+
 body {
 	background: #0d1117;
 }
@@ -20,8 +21,8 @@ body {
 }
 
 
-
 /*	Pantalla	*/
+
 #pantalla-cuerpo {
 	width: 21%;
 	height: 10vh;
@@ -47,6 +48,7 @@ body {
 
 
 /*	Teclado	*/
+
 #teclado {
 	height: 55vh;
 	display: grid;
@@ -69,6 +71,7 @@ body {
 
 
 /*	Colores filas 	*/
+
 .fila-5 { color: #24ad60; }
 .fila-4 { color: #3f5da2; }
 .fila-3 { color: #874b9d; }
@@ -78,6 +81,7 @@ body {
 
 
 /*	Media Queries	*/
+
 @media (max-width: 1900px) {
 	#pantalla-valor { font-size: xx-large; }
 }
